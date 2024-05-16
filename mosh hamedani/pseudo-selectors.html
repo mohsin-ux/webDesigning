@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo selectors</title>
+    <style>
+        body {
+            /* background: linear-gradient(to right, yellow, green 50%); */
+            background: radial-gradient(circle at top left, yellow, green);
+        }
+
+        ul li:nth-child(odd) {
+            color: red;
+        }
+
+        a:visited,
+        a:link {
+            color: green;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        p::first-letter {
+            font-size: 100px;
+            font-weight: bold;
+        }
+
+        p::first-line {
+            font-weight: bold;
+        }
+
+        p::selection {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ul>
+    <a href="#">addresses</a>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Reprehenderit officiis dolor soluta autem iure quos
+        inventore incidunt, a quidem ad?Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, nesciunt
+        distinctio. Totam dolores corporis consectetur aperiam quidem. Voluptates aperiam quia libero atque consectetur
+        at nostrum saepe ea nulla. Deserunt aperiam cupiditate vitae, quod, commodi repudiandae qui alias nobis
+        accusantium vel vero ut fuga et deleniti atque, mollitia eius nemo quasi!
+    </p>
+
+</body>
+
+</html>

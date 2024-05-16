@@ -1,0 +1,89 @@
+/*----------- basic styles --------*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------- create ----------*/
+.create {
+  width: 100%;
+  height: 400px;
+  padding: 3% 10% 0;
+  /* background-color: red; */
+}
+
+.create .box {
+  width: 50%;
+  height: 90%;
+  float: left;
+  /* background-color: yellow; */
+}
+.create img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/*---------- pick ----------*/
+
+.pick {
+  width: 100%;
+  height: 400px;
+  padding: 3% 10% 0;
+  background-color: lightgray;
+}
+.pick .box {
+  width: 50%;
+  height: 90%;
+  float: left;
+  /* background-color: yellow; */
+}
+.pick img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+/*---------- categories ------------*/
+
+.categories {
+  width: 100%;
+  height: 400px;
+  padding: 0 10%;
+  /* background-color: greenyellow; */
+}
+.categories .box {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: yellow; */
+}
+.categories .innerbox {
+  width: 30%;
+  height: 80%;
+  /* background-color: red; */
+}
+.categories img {
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+/*---------- destinations ---------*/
+
+.destinations {
+  width: 100%;
+  height: 400px;
+  padding: 20px 10%;
+}
+.destinations .box {
+  width: 50%;
+  height: 90%;
+  float: left;
+  background-color: red;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<input type="text" id="username" name="">
+<span id="output" style="color: red;"></span>
+<input type="text" id="email" name="">
+<span id="output1" style="color: red;"></span>
+<input type="submit" onclick="valid()" name="">
+
+<script type="text/javascript">
+	function valid(){
+		var username=document.getElementById('username').value;
+		if (usernamne=="") {
+			document.getElementById('output').innerHTML="Kindly Fill this field";
+		}
+		var email=document.getElementById('email').value;
+		if (email=="") {
+			document.getElementById('output1').innerHTML="Kindly Enter Your Email";
+		}
+
+	}
+</script>
+</body>
+</html>
+Create a page for user registeration with 20 fields and then validate them and output
+ the error on page aswell as the box will be bordered red if any field is empty.
+
+Create a page in which user will enter his age and marks if the age is greater then 
+18 and marks are less then 50 then red the box and output that your are fail.
+ 
+Create a page for contact having 4 fields in which user will enter the data if any data
+ is missing display the error on page in alert with red bordered box and if the data is
+  filled then output all the data entered by user on page.

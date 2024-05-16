@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        .design{
+            padding: 10px 30px;
+            font-size: 20px;
+            background-color: orangered;
+            border: 3px solid orangered;
+            border-radius: 20px;
+        }
+        .design:hover{
+            background-color: darkorange;
+        }
+    </style>
+</head>
+<body style="background-color: orange;">
+
+    <h1>Registration Form</h1>
+    
+    <h3>what is your gender : </h3>
+    <input type="radio" id="male" value="male" name="gender">male
+    <input type="radio" id="female" value="female" name="gender">female <br>
+
+    <h3>Are u married...or not..</h3>
+    <input type="radio" id="married" value="married" name="married">married
+    <input type="radio" id="unmarried" value="unmarried" name="married">unmarried <br>
+
+    <h3>Education level</h3>
+    <input type="radio" id="matric" value="married" name="education">matric
+    <input type="radio" id="fsc" value="fsc" name="education">fsc
+    <input type="radio" id="graduation" value="graduation" nname="education">graduation <br>
+
+    <h3>Are u have a passport..??</h3>
+    <input type="radio" id="yes" value="yes" name="passport"> yes
+    <input type="radio" id="no" value="no" name="passport">no <br>
+
+    <h3>What is your religion....??</h3>
+    <input type="radio" id="islam" value="islam" name="religion">islam 
+    <input type="radio" id="cristian" value="cristian" name="religion">cristian 
+    <input type="radio" id="hindu" value="hindu" name="religion">hindu <br><br>
+
+    <input type="button" value="submit" onclick="submit()" class="design">
+    <h2>Your information....</h2>
+
+    <p id="a1"></p>
+    <p id="a2"></p>
+    <p id="a3"></p>
+    <p id="a4"></p>
+    <p id="a5"></p>
+
+
+
+
+    <script type="text/javascript">
+
+        function submit(){
+
+        
+
+        var male=document.getElementById('male');
+        var female=document.getElementById('female');
+
+        var married=document.getElementById('married');
+        var unmarried=document.getElementById('unmarried');
+
+        var matric=document.getElementById('matric');
+        var fsc=document.getElementById('fsc');
+        var graduation=document.getElementById('graduation');
+
+        var yes=document.getElementById('yes');
+        var no=document.getElementById('no');
+
+        var islam=document.getElementById('islam');
+        var cristian=document.getElementById('cristian');
+        var hindu=document.getElementById('hindu');
+
+
+        if(male.checked)
+        {
+            document.getElementById('a1').innerHTML="gender : "+male.value;
+            // alert(male.value);          
+        }
+        else if(female.checked)
+        {
+            document.getElementById('a1').innerHTML="gender : "+female.value;
+
+            // alert(female.value);
+        }
+        else{
+            alert("enter gender");
+        }
+
+
+
+
+        if(married.checked)
+        {
+            document.getElementById('a2').innerHTML="merital status : "+married.value;
+            // alert(unmarried.value);          
+        }
+        else if(unmarried.checked==true)
+        {
+            document.getElementById('a2').innerHTML="merital status : "+unmarried.value;
+
+            // alert(unmarried.value);
+        }
+        else{
+            alert("enter merital status...");
+        }
+
+
+
+
+        if(matric.checked==true)
+        {
+            document.getElementById('a3').innerHTML="education level : "+matric.value;
+            // alert(matric.value);          
+        }
+        else if(fsc.checked==true)
+        {
+            document.getElementById('a3').innerHTML="Education level : "+fsc.value;
+
+            // alert(fsc.value);
+        }
+        else if(graduation.checked==true)
+        {
+            document.getElementById('a3').innerHTML="Education level : "+graduation.value;
+
+            // alert(graduation.value);
+        }
+        else{
+            alert("enter education qualification....");
+        }
+
+
+
+
+        if(yes.checked==true)
+        {
+            document.getElementById('a4').innerHTML="having passport : "+yes.value;
+            // alert(yes.value);          
+        }
+        else if(no.checked==true)
+        {
+            document.getElementById('a4').innerHTML="having passport : "+no.value;
+
+            // alert(female.value);
+        }
+        else{
+            alert("enter passport information....");
+        }
+
+
+
+
+        if(islam.checked==true)
+        {
+            document.getElementById('a5').innerHTML="Relegion : "+islam.value;
+            // alert(islam.value);          
+        }
+        else if(cristian.checked==true)
+        {
+            document.getElementById('a5').innerHTML="Religion : "+cristian.value;
+
+            // alert(cristian.value);
+        }
+        else if(hindu.checked==true)
+        {
+            document.getElementById('a5').innerHTML="Religion : "+hindu.value;
+
+            // alert(hindu.value);
+        }
+        else{
+            alert("Enter religion....");
+        }
+
+        }
+
+    </script>
+</body>
+</html>

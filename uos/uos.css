@@ -1,0 +1,375 @@
+/*------------- main styles ----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+.separater {
+  background-color: rgb(7, 26, 51);
+  padding: 42px 0;
+}
+/*-------- typography -------*/
+
+.heading1 {
+  font-size: 3.5vh;
+}
+
+.heading2 {
+  margin: 30px 0 25px;
+  text-align: center;
+  font-size: 2.5vh;
+}
+hr {
+  margin: 17px 0 30px;
+}
+p {
+  margin: 13px 0 0;
+  line-height: 25px;
+  text-align: justify;
+  font-size: 14.9px;
+}
+
+/*-------- topbar -------*/
+.topbar {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(7, 26, 51);
+  color: white;
+}
+.topbar .box {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.topbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/*------------- downbar -----------*/
+
+.downbar {
+  width: 100%;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background-color: white;
+  color:rgb(7, 26, 51);
+}
+.downbar .box {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.downbar img {
+  width: 14%;
+  height: 100%;
+}
+.downbar ul {
+  margin: 0 40px;
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/*------------- background ----------*/
+
+.back {
+  width: 100%;
+  height: 75vh;
+}
+.back img {
+  width: 100%;
+  height: 100%;
+}
+/*------------- inform -----------*/
+.inform {
+  width: 100%;
+  height: auto;
+  padding: 25px 0;
+  color: rgb(7, 26, 51);
+}
+.inform .box {
+  display: flex;
+  gap: 30px;
+}
+.inform .innerbox {
+  width: 33%;
+  height: 510px;
+}
+.inform button {
+  padding: 10px 20px;
+  margin: 10px 0 0;
+  background-color: rgb(24, 224, 24);
+  color: white;
+  border: none;
+  font-size: 16px;
+}
+
+.inform .color {
+  width: 90%;
+  padding: 20px;
+  margin: auto;
+  background-color: rgb(255, 217, 0);
+}
+marquee {
+  padding: 10px 0;
+  text-align: justify;
+}
+
+/*-------------- events ----------*/
+
+.events {
+  width: 100%;
+  padding: 0 0 60px 0;
+  color: rgb(7, 26, 51);
+}
+
+.events .box {
+  display: flex;
+  gap: 40px;
+}
+.events .innerbox {
+  width: 33%;
+  height: 76vh;
+  box-shadow: 0 0 10px 1px gray;
+}
+.events img {
+  width: 100%;
+  height: 40%;
+}
+.events .portion {
+  width: 100%;
+  height: 60%;
+  padding: 0 20px;
+}
+
+.events .position {
+  width: 27%;
+  height: 60px;
+  position: relative;
+  left: 20px;
+  top: -40px;
+  background-color: rgb(7, 173, 57);
+  text-align: center;
+  padding: 8px 20px;
+  color: white;
+}
+.events button {
+  padding: 10px 25px;
+  color: white;
+  background-color: rgb(6, 81, 151);
+  border: none;
+  font-size: 16px;
+}
+.event h3 {
+  margin-top: -100px;
+}
+
+/*--------------- message -------------*/
+
+.message {
+  width: 100%;
+  height: auto;
+  padding: 0 0 30px;
+  background-color: rgb(5, 29, 58);
+  color: #ffffff;
+}
+.message .box {
+  height: 550px;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr;
+  grid-template-rows: auto;
+  grid-gap: 30px;
+  align-content: center;
+  text-align: center;
+}
+
+.message img {
+  width: 100%;
+  height: 80%;
+  margin: 35px 0 10px;
+  border: 3px solid white;
+}
+.message h5 {
+  line-height: 4vh;
+  text-align: center;
+}
+
+/*------------- admin -----------*/
+
+.admin {
+  width: 100%;
+  background-color: lightgray;
+  padding: 50px 0;
+  color:rgb(7, 26, 51);
+}
+.admin .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30.8px;
+}
+.admin .innerbox {
+  width: 31.3%;
+  height: 230px;
+  padding: 0 40px 40px;
+  background-color: white;
+  position: relative;
+}
+.admin .head {
+  width: 25%;
+  height: 70px;
+  padding: auto;
+  background-color:rgb(7, 26, 51);
+  position: relative;
+  color: white;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.admin h2,
+.admin h3 {
+  margin: 30px 0;
+}
+.admin h3 {
+  color: rgb(16, 204, 16);
+}
+.admin i {
+  color: white;
+  font-size: 32px;
+  margin: 20px;
+}
+.admin .design {
+}
+
+/*------------ academic ----------*/
+
+.academic {
+  width: 100%;
+  padding: 60px 0;
+  color: rgb(7, 26, 51);
+}
+.academic .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 25px;
+}
+.academic .innerbox {
+  width: 31%;
+  height: 400px;
+  box-shadow: 0 0 8px 1px grey;
+}
+.academic img {
+  width: 100%;
+  height: 45%;
+}
+.academic .portion {
+  padding: 15px;
+}
+.academic button {
+  padding: 13px 88px;
+  margin: 55px 40px;
+  font-size: 15px;
+  background-color: rgb(10, 88, 189);
+  color: white;
+  border: none;
+}
+
+/*--------------- latest ---------------*/
+
+.latest {
+  width: 100%;
+  padding: 50px 0 50px;
+  color: rgb(7, 26, 51);
+}
+.latest .box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30.8px;
+}
+.latest .innerbox {
+  width: 31.3%;
+  height: fit-content;
+  padding: 15px;
+  background-color: lightgray;
+  text-align: justify;
+}
+.latest h3,
+.latest p {
+  margin: 20px;
+}
+
+/*------------- footer ------------*/
+
+.footer {
+  background-color: rgb(7, 26, 51);
+  color: lightgray;
+}
+
+/*------------- choose ----------*/
+
+.choose {
+  width: 100%;
+  padding: 70px 0;
+}
+.choose .box {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.choose .innerbox {
+  width: 50%;
+  height: 70vh;
+}
+
+/*-------------- endbar ---------------*/
+.endbar {
+  width: 100%;
+  height: 80px;
+}
+.endbar .box {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+
+/*----------- about ---------*/
+.about .box {
+  width: 100%;
+  height: 150px;
+  padding: 40px 0;
+  display: flex;
+  gap: 40px;
+}
+.about .innerbox {
+  width: 49%;
+}
+ul {
+  list-style: square;
+}
+
+/*----------- copyright ----------*/
+
+.copyright .box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

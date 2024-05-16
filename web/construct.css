@@ -1,0 +1,327 @@
+* {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 150px;
+}
+
+.nav {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+}
+.navbar .box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+.navbar .box .innerbox {
+  width: 45%;
+  /* background-color: green; */
+  /* border: 2px solid black; */
+}
+
+/*--------------------- upper navbar -------------------------*/
+
+.topbar {
+  width: 100%;
+  background-color: rgb(255, 213, 0);
+}
+.topbar ul {
+  list-style: none;
+  display: flex;
+}
+.topbar li {
+  padding: 20px;
+}
+.topbar .right ul {
+  justify-content: flex-end;
+  /* background-color: red; */
+}
+
+/*------------- lower navbar ------------------*/
+
+.downbar {
+  width: 100%;
+  background-color: rgb(4, 4, 59);
+}
+.downbar .left {
+  list-style: none;
+  padding: 20px;
+}
+.downbar .right ul {
+  list-style: none;
+  display: flex;
+}
+.downbar li {
+  color: white;
+  margin: 30px 20px;
+}
+.golden {
+  color: rgb(255, 200, 0);
+}
+
+/*-------------------- background image ---------------------*/
+
+.back {
+  width: 100%;
+  height: 400px;
+  background-image: url("pics/87.webp");
+  background-size: 100% 400px;
+  background-repeat: no-repeat;
+  color: white;
+}
+.back .text {
+  width: 60%;
+  height: inherit;
+  margin: auto;
+  text-align: center;
+  line-height: 50px;
+  /* color: white; */
+}
+
+.white {
+  color: white;
+}
+.btn {
+  background-color: rgb(255, 204, 0);
+  padding: 10px;
+  color: white;
+  border-radius: 7px;
+  border: 2px solid rgb(255, 204, 0);
+  margin-right: 25px;
+}
+
+/*--------------------- wellcome ---------------------*/
+
+.wellcome {
+  width: 100%;
+  height: 300px;
+}
+
+.wellcome .box {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+.wellcome .innerbox {
+  width: 50%;
+  height: inherit;
+}
+.wellcome .left {
+  padding: 30px 0px;
+  line-height: 25px;
+}
+.wellcome .right img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+/*-------------------- choose -----------------*/
+
+.choose {
+  width: 100%;
+  height: 550px;
+  background-color: lightgray;
+}
+.choose .text {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+/* question */
+
+.choose .box {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.set {
+  padding: 20px 0px;
+}
+
+.choose .innerbox {
+  width: 20%;
+  height: 350px;
+}
+.icon {
+  width: 100%;
+  height: 190px;
+}
+.circle {
+  width: 70%;
+  height: 150px;
+  margin: auto;
+  border: 2px solid rgb(255, 217, 0);
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 20px rgb(255, 217, 0);
+}
+.innerbox .text {
+  width: 100%;
+  height: 160px;
+  text-align: center;
+}
+
+/*-------------------- services --------------------*/
+
+.services {
+  width: 100%;
+  height: 550px;
+}
+.services .heading {
+  text-align: center;
+  padding: 10px;
+}
+.services .box {
+  width: 100%;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.services .box .innerbox {
+  width: 30%;
+  height: 400px;
+}
+/*
+.services .innerbox .img{
+    width: 100%;
+    height: 200px;
+}*/
+.services img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+.services .innerbox .text {
+  width: 100%;
+  height: 200px;
+}
+
+/*--------------------- made ------------------*/
+
+.made {
+  width: 100%;
+  height: 700px;
+  background-image: url("pics/84.jpg");
+  background-size: 100% 700px;
+}
+.made .nav .text {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+
+.made .box {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.made .box .outerbox {
+  width: 48%;
+  height: inherit;
+}
+.made .box .innerbox {
+  width: 48%;
+  height: 198px;
+}
+.made .right {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.made img {
+  width: 100%;
+  height: inherit;
+  object-fit: cover;
+}
+
+/*---------------------- customer -----------------------*/
+
+.customer {
+  width: 100%;
+  height: 500px;
+}
+.customer .nav .text {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+.customer .box {
+  width: 100%;
+  height: 400px;
+  display: flex;
+}
+.customer .box .innerbox {
+  width: 30%;
+  height: 300px;
+  margin: 20px;
+}
+.customer .innerbox .text {
+  width: 80%;
+  height: 190px;
+  padding: 35px;
+  border-radius: 50px;
+  background-color: lightgray;
+}
+.customer .innerbox .pic {
+  width: 100%;
+  height: 100px;
+}
+
+/*--------------------- question --------------------*/
+
+.question {
+  width: 100%;
+  height: 120px;
+  background-color: rgb(255, 183, 0);
+}
+.question .box {
+  width: 50%;
+  height: inherit;
+  float: left;
+}
+.question .nav .left {
+  background-color: skyblue;
+  /* flex-direction: column; */
+}
+.question .nav .right {
+  background-color: rgb(255, 85, 0);
+  /* flex-direction: column; */
+  /* align-items:stretch; */
+  /* justify-content: space-around; */
+}
+.inputdesign {
+  padding: 5px 25px;
+  margin: 10px;
+  border-radius: 9px;
+}
+
+/*--------------------- endlist ------------------*/
+
+.endlist {
+  width: 100%;
+  height: 400px;
+  color: white;
+  background-color: rgb(3, 3, 42);
+}
+.endlist .box {
+  width: 100%;
+  height: inherit;
+  display: flex;
+}
+.endlist .box .innerbox {
+  width: 24%;
+  height: inherit;
+  margin: 10px;
+}

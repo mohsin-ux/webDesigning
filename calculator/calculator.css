@@ -1,0 +1,26 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: gold;
+}
+#first {
+  background-color: rgb(85, 209, 85);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+#second {
+  background-color: rgb(85, 209, 85);
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+}
+.button {
+  background-color: blueviolet;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  color: white;
+}

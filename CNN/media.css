@@ -1,0 +1,244 @@
+@media screen and (max-width: 768px) and (min-width: 425px) {
+  body {
+    background-color: gold;
+  }
+
+  .none {
+    display: none;
+  }
+  /*------------- topbar -------------*/
+
+  .top-bar ul {
+    display: none;
+  }
+  /*------------- trending -------------*/
+  .trending .box {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0 0px;
+  }
+  .trending .main {
+    width: 100%;
+  }
+  .trending .innerbox {
+    width: 47.5%;
+  }
+
+  /*------------ news -------------*/
+  .news .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .news .main1 {
+    width: 100%;
+    order: -1;
+  }
+
+  .news .innerbox {
+    width: 47%;
+  }
+
+  /*------------ featured -------------*/
+  .featured .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .featured .innerbox {
+    width: 47%;
+    height: 850px;
+    padding: 10px 0;
+  }
+  /*------------ watch -------------*/
+  .watch .position {
+    height: 50%;
+    padding: 5px;
+    bottom: -40px;
+  }
+  /*------------ photos -------------*/
+  .photos .box {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 33%);
+  }
+
+  /*------------ missed -------------*/
+  .missed .box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .missed .item1 {
+    width: 100%;
+  }
+  .missed .innerbox {
+    width: 47%;
+  }
+  .footer {
+    text-align: center;
+    display: block;
+  }
+  /*-------------- links ------------*/
+  .links ul {
+    display: none;
+  }
+
+  .links .box {
+    display: block;
+  }
+  .links .innerbox {
+    width: 100%;
+  }
+  .links h4 {
+    width: 100%;
+  }
+
+  /*-------------- endbar ------------*/
+
+  .endbar {
+    display: block;
+    margin: 0;
+  }
+
+  .endbar .box {
+    display: inline-block;
+  }
+
+  /*-------------- privacy -----------*/
+  .privacy {
+    padding: 10px 0;
+  }
+  .privacy ul {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  body {
+    background-color: rgb(43, 228, 43);
+  }
+  .none {
+    display: none;
+  }
+  /*-------------- topbar ------------*/
+
+  .top-bar ul {
+    display: none;
+  }
+  .top-bar .right {
+    display: none;
+  }
+  /*-------------- downbar -----------*/
+  .down-bar {
+    display: block;
+  }
+
+  /*-------------- trending -----------*/
+  .trending .box {
+    display: block;
+    padding: 0;
+  }
+  .trending .innerbox {
+    width: 100%;
+    padding: 15px 0;
+  }
+  /*-------------- news ------------*/
+  .news .box {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .news .innerbox {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  /*-------------- featured ------------*/
+  .featured .box {
+    display: block;
+    padding: 10px 0;
+  }
+  .featured .innerbox{
+    width: 100%;
+  }
+
+  /*-------------- watch ------------*/
+  .watch .box {
+    display: block;
+    /* padding: 40px 0; */
+  }
+  .watch .innerbox {
+    margin: 0 0 60px 0;
+  }
+  .watch .position {
+    padding: 0.3px 5px;
+    overflow: hidden;
+  }
+  /*-------------- photos ------------*/
+  .photos {
+    padding: 0 0 70px;
+  }
+  .photos .box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 25%);
+  }
+  /*-------------- paid ------------*/
+
+  .paid .box {
+    display: block;
+  }
+  .paid .flex {
+    display: flex;
+    padding: 10px;
+  }
+  .paid .flex .img {
+    order: 1;
+    width: 25%;
+    height: 100px;
+    object-fit: cover;
+  }
+
+  /*-------------- missed ------------*/
+
+  .missed .box {
+    display: block;
+  }
+  .missed .innerbox{
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
+    display: block;
+  }
+  /*-------------- links ------------*/
+  .links ul {
+    display: none;
+  }
+
+  .links .box {
+    display: block;
+  }
+  .links .innerbox {
+    width: 100%;
+  }
+  .links h4 {
+    width: 100%;
+  }
+
+  /*-------------- endbar ------------*/
+
+  .endbar {
+    display: block;
+    margin: 0;
+  }
+
+  .endbar .box {
+    display: inline-block;
+  }
+
+  /*-------------- privacy -----------*/
+  .privacy {
+    padding: 10px 0;
+  }
+  .privacy ul {
+    text-align: center;
+  }
+}

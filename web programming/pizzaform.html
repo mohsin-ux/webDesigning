@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Form</title>
+</head>
+<body>
+    <form>
+        <h1>Pizza</h1>
+        <input type="radio" value="900" id="large"  name="pizza" >Large
+        <input type="radio" value="700" id="medium" name="pizza">medium
+        <input type="radio" value="400" id="small"  name="pizza" >small
+        <br>
+        <h1>Flavour</h1>
+        <input type="radio" name="flavour" id="Fajita" value="Fajita" >Fajita
+        <input type="radio" name="flavour" id="chikenTikka" value="chikenTikka" >tikka
+        <input type="radio" name="flavour" id="Tandori" value="Tandori" >Tandori
+
+        <br>
+        <button type="button" onclick="bill()">Submit</button><br><br>
+        <h1 id="bill"></h1>
+
+        <!-- <p id="bill"></p> -->
+    </form>
+    <script>
+        function bill() {
+            var large=document.getElementById("large");
+            var medium=document.getElementById("medium");
+            var small=document.getElementById("small");
+
+
+            var fajita=document.getElementById("Fajita");
+            var chikenTikka=document.getElementById("chikenTikka");
+            var Tandori=document.getElementById("Tandori");
+
+            
+            
+            var price=0;
+            var flavour="";
+            if(large.checked)
+            {
+                price=large.value;
+            }
+            else if(medium.checked)
+            {
+                price=medium.value;
+            }
+            else if(small.checked)
+            {
+                price=small.value;
+            }
+            else{
+                price=0;   
+            }
+            
+                if(fajita.checked){
+                flavour=Fajita.value;    
+                }
+                else if(chikenTikka.checked)
+                {
+                    flavour=chikenTikka.value;
+                }
+                else if(Tandori.checked)
+                {
+                    flavour=Tandori.value;
+                }
+                else{
+                    flavour=0;
+
+                }
+            document.getElementById('bill').innerHTML=flavour+ " : "+price;
+        }
+    </script>
+</body>
+</html>

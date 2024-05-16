@@ -1,0 +1,387 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  box-sizing: border-box;
+}
+.container {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+}
+.heading {
+  padding: 35px 50px 35px 0px;
+  text-align: center;
+}
+.p-tag {
+  color: rgb(14, 164, 71);
+  font-size: 29px;
+  margin-bottom: 9px;
+}
+.border {
+  width: 80%;
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  border-bottom: 20px solid rgb(14, 164, 71);
+}
+
+/*----------- intro ------------*/
+.intro {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(6, 6, 85);
+  color: white;
+}
+
+.intro .box {
+  width: 50%;
+  height: inherit;
+  float: left;
+}
+.intro ul {
+  list-style: none;
+  font-weight: 200px;
+}
+.intro li {
+  float: left;
+  padding: 15px 40px;
+}
+.intro .right li {
+  float: right;
+  padding-right: 0px;
+}
+.intro .fa-icon {
+  color: rgb(14, 164, 71);
+}
+
+/*------------ logo ------------*/
+.logo {
+  width: 100%;
+  height: 150px;
+  color: rgb(12, 12, 113);
+}
+.logo .box {
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.logo .left {
+  display: flex;
+  align-items: center;
+}
+.logo .right {
+  display: flex;
+  align-items: center;
+  font-size: x-large;
+}
+.logo .size1 {
+  font-size: 40px;
+}
+.logo .fa-icon {
+  font-size: 60px;
+  color: rgb(14, 164, 71);
+}
+
+/*----------- navbar -------------*/
+.navbar {
+  width: 100%;
+  height: 50px;
+  box-shadow: 0px 1px 5px 1px gray inset;
+}
+
+.navbar li {
+  float: left;
+  padding: 15.5px;
+  list-style-type: none;
+}
+
+.dropdown {
+  display: none;
+}
+.dropdown ul li {
+  float: none;
+}
+
+.navbar li:hover {
+  background-color: rgb(14, 164, 71);
+  transition: 0.6s;
+  color: white;
+}
+
+/*----------- background ----------*/
+.back {
+  width: 100%;
+  height: 500px;
+  margin-top: 20px;
+  background-image: url("pics/college1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+/*------------- links --------------*/
+
+.links {
+  width: 80%;
+  height: 70px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.links .innerbox {
+  width: 24.9%;
+  height: 130px;
+  background-color: rgb(14, 164, 71);
+
+  position: relative;
+  bottom: 99%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: larger;
+  color: white;
+}
+.links .innerbox:hover {
+  border: 1px solid white;
+  transition-duration: 2s;
+}
+
+/*------------- principal message --------------*/
+
+.message {
+  width: 100%;
+  height: 550px;
+}
+.message .box {
+  width: 50%;
+  float: left;
+  color: rgb(47, 44, 44);
+}
+.message .left {
+  width: 65%;
+  text-align: justify;
+}
+.message .right {
+  width: 35%;
+  object-fit: cover;
+  text-align: center;
+  line-height: 30px;
+}
+.message .text {
+  font-size: 25px;
+}
+
+/*-------------- latest news ------------*/
+
+.news {
+  width: 100%;
+}
+.news .box {
+  width: 100%;
+  height: 120vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 250px);
+  grid-gap: 20px;
+}
+.news .innerbox {
+  border: 1px solid lightgray;
+}
+.news .portion {
+  width: 50%;
+  float: left;
+}
+.news .right {
+  padding: 20px;
+  font-size: 1.2vw;
+}
+.news .button {
+  padding: 8px 17px;
+  background-color: rgb(14, 164, 71);
+  font-size: 2.5vh;
+  color: white;
+  border: rgb(14, 164, 71);
+  margin-top: 10px;
+  border-bottom-right-radius: 9px;
+}
+.news h4 {
+  margin: 10px 0px 10px 0px;
+  color: rgb(84, 84, 84);
+}
+
+.news .img {
+  width: 100%;
+  height: 250px;
+  /* object-fit: cover; */
+}
+
+.news .innerbox:hover {
+  box-shadow: 0 0 19px 5px lightgray;
+  transition: 0.5s;
+}
+/* .news .innerbox .left:hover {
+  z-index: 4;
+  border: 15px solid rgb(14, 164, 71);
+  transition-duration: 0.5s;
+} */
+.news .button:hover {
+  background-color: white;
+  color: rgb(14, 164, 71);
+  box-shadow: 0 0 15px 1px lightgray;
+  transition: 0.5s;
+}
+
+/*------------ latest events ------------*/
+
+.events {
+  width: 100%;
+}
+.events .box {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  grid-gap: 20px;
+}
+
+.events .innerbox:hover {
+  box-shadow: 0 0 19px 5px rgb(185, 168, 168);
+  transition: 0.4s;
+}
+
+/*-------------- gallery ------------*/
+
+.gallery {
+  width: 100%;
+}
+.gallery .box {
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.gallery .innerbox {
+  width: 19%;
+  height: 140px;
+  background-color: gold;
+}
+
+/*--------------- college map -------------*/
+
+.map {
+  width: 100%;
+}
+
+/*---------------- contact----------- */
+
+.contact {
+  width: 100%;
+  height: 120px;
+  position: relative;
+  top: 60px;
+}
+.contact .box {
+  width: 50%;
+  height: inherit;
+  float: left;
+  background-color: rgb(14, 164, 71);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+.contact .left {
+  font-size: 27px;
+}
+.contact .right p {
+  padding: 29px;
+}
+
+.contact .btn1 {
+  padding: 15px;
+  font-size: 15px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid aliceblue;
+  color: rgb(14, 164, 71);
+}
+.contact .btn1:hover {
+  background-color: rgb(14, 164, 71);
+  cursor: pointer;
+  transition: 0.6s;
+  box-shadow: 0 0 15px 5px rgb(11, 113, 50);
+  border: 1px solid rgb(14, 164, 71);
+  color: white;
+}
+
+/*--------------- footer -------------*/
+
+.footer {
+  width: 100%;
+  height: 600px;
+  background-color: #04175c;
+}
+.footer .box {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-evenly;
+}
+.footer .innerbox {
+  width: 24%;
+  height: 480px;
+  color: rgb(234, 230, 230);
+}
+.footer ul {
+  display: flex;
+  flex-direction: column;
+}
+.footer li {
+  list-style: none;
+  padding: 1px;
+  font-size: 1.1rem;
+}
+.main {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+.remain {
+  font-size: 26px;
+  margin-top: 7px;
+  margin-bottom: 50px;
+}
+.aro {
+  color: green;
+  font-size: 20px;
+  margin-right: 10px;
+}
+.margins {
+  margin: 0px 20px 30px 0px;
+}
+.footer .fa-icon {
+  color: rgb(14, 164, 71);
+}
+
+/*-------------- media queries -----------*/
+
+/* @media (max-width: 1440px) and (min-width: 1024px) {
+  .box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 425px) {
+  .box {
+    flex-direction: column;
+  }
+} */

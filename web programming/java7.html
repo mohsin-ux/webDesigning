@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java7</title>
+    <style type="text/css">
+    
+        .color{
+            color: red;
+        }
+    </style>
+    
+</head>
+<body style="background-color: rgb(250, 197, 98)">
+    <h1>Enter Information</h1>
+    
+        <span>Enter your age:-</span>
+        <input type="number" id="age">
+        <span id="a1" class="color"></span><br><br>
+        <span>Enter your marks:-</span>
+        <input type="number" id="marks">
+        <span id="a2" class="color"></span><br><br>
+        <input type="submit" onclick="btn1()">
+        
+    
+    <script>
+        function btn1()
+        {
+            var age=document.getElementById('age').value;
+            var marks=document.getElementById('marks').value;
+        if(age!="" && marks!="")
+        {
+
+            if((age<18)&&(marks>50))
+            {
+                alert("you are pass");
+                document.getElementById('mes').innerHTML("hello");
+            }
+            else
+            {
+                 alert("you are fail");
+            }
+        }
+        if(age=="")
+        {
+            document.getElementById('age').style="border: 3px solid red";
+            document.getElementById('a1').innerHTML="Enter age";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+             alert("enter age");
+        }
+        
+        if(marks==""){
+            document.getElementById('marks').style="border: 3px solid red";
+            document.getElementById('a2').innerHTML="Enter marks";
+
+             alert("enter marks");
+
+        }
+        }
+    </script>
+</body>
+</html>

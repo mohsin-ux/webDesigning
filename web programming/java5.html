@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+	<style type="text/css">
+		.design{
+			background-color: brown;
+			border: 2px solid brown;
+			padding: 9px 200px;
+			border-radius: 10px;
+			margin-left: 50px;
+			color: aliceblue;
+			font-size: 20px;
+		}
+		.design:hover{
+			background-color: blue;
+			border: 2px solid blue;
+		}
+		.input{
+			padding: 2px 5px;
+			background-color: palevioletred
+			;
+			color: white;
+			border: 3px solid palevioletred;
+		}
+	</style>
+
+
+</head>
+<body style="background-color: rgb(147, 245, 147);">
+<table>
+	<tr>
+		<td><p>Enter user name:</p></td>
+		<td><input type="text" id="username" name=""></td>
+		<td><span id="output1" style="color: red;"></span></td>
+	</tr>
+</table>
+
+<span>Enter father name:</span>
+<input type="text" id="fathername" name="">
+<span id="output2" style="color: red;" ></span><br><br>
+
+<span>Enter mother name: </span>
+<input type="text" id="mothername">
+<span id="output3" style="color: red;"></span><br><br>
+
+<span>Enter province name: </span>
+<input type="text" id="provincename">
+<span id="output4" style="color: red;"></span><br><br>
+
+<span>Enter city name: </span>
+<input type="text" id="cityname">
+<span id="output5" style="color: red;"></span><br><br>
+
+<span>Enter country name</span>
+<input type="text" id="countryname">
+<span id="output6" style="color: red;"></span><br><br>
+
+<span>Enter your address: </span>
+<input type="text" id="address">
+<span id="output7" style="color: red;"></span><br><br>
+
+<span>enter user email address</span>
+<input type="email" id="email" name="">
+<span id="output8" style="color: red;"></span><br><br>
+
+<span>Enter your password</span>
+<input type="password" id="password" name="">
+<span id="output9" style="color: red;"></span><br><br>
+
+<span>Enter your phone number</span>
+<input type="number" id="number" name="">
+<span id="output10" style="color: red;"></span><br><br>
+
+<input type="submit" class="design" onclick="valid()" name="" ><br><br>
+</table>
+
+<script type="text/javascript">
+	function valid() {
+		
+		var username=    document.getElementById('username'     ).value;
+		var fname=       document.getElementById('fathername'   ).value;
+		var mname=       document.getElementById('mothername'   ).value;
+		var provincename=document.getElementById('provincename' ).value;
+		var cityname=    document.getElementById('cityname'     ).value;
+		var countryname= document.getElementById('countryname'  ).value;
+		var address=     document.getElementById('address'      ).value;
+		var email=       document.getElementById('email'        ).value;
+		var password=    document.getElementById('password'     ).value;
+		var number=      document.getElementById('number'       ).value;
+		
+	
+		if (username=="") 
+		{
+			document.getElementById('username').style="border:3px solid red";
+			document.getElementById('output1').innerHTML="Enter username";
+
+		}
+		else
+		{
+			document.getElementById('username').style="";
+			document.getElementById('output1').innerHTML="";
+			
+		}
+		if(fname=="")
+		{
+			document.getElementById('fathername').style="border:3px solid red";
+			document.getElementById('output2').innerHTML="Enter this father name";
+		}
+		else
+		{
+			document.getElementById('fathername').style="";
+			document.getElementById('output2').innerHTML="";
+		}
+		if(mname=="")
+		{
+			document.getElementById('mothername').style="border:3px solid red";
+			document.getElementById('output3').innerHTML="Enter mother name";
+		}
+		else
+		{
+			document.getElementById('mothername').style="";
+			document.getElementById('output3').innerHTML="";
+		}
+		if(provincename=="")
+		{
+		    document.getElementById('provincename').style="border: 3px solid red";
+			document.getElementById('output4').innerHTML="Enter province name";
+		}
+		else
+		{
+			document.getElementById('provincename').style="";
+			document.getElementById('output4').innerHTML="";
+		}
+		if(cityname=="")
+		{
+			document.getElementById('cityname').style="border:3px solid red";
+			document.getElementById('output5').innerHTML="Enter city name";
+		}
+		else
+		{
+			document.getElementById('cityname').style="";
+			document.getElementById('output5').innerHTML="";
+		}
+		if(countryname=="")
+		{
+			document.getElementById('countryname').style="border:3px solid red";
+			document.getElementById('output6').innerHTML="Enter country name";
+		}
+		else
+		{
+			document.getElementById('countryname').style="";
+			document.getElementById('output6').innerHTML="";
+		}
+		if(address=="")
+		{
+			document.getElementById('address').style="border:3px solid red";
+			document.getElementById('output7').innerHTML="Enter address";
+		}
+		else
+		{
+			document.getElementById('address').style="";
+			document.getElementById('output7').innerHTML="";
+		}
+		if(email=="")
+		{	
+			document.getElementById('email').style="border:3px solid red";
+			document.getElementById('output8').innerHTML="Enter email address";
+		}
+		else
+		{
+			document.getElementById('email').style="";
+			document.getElementById('output8').innerHTML="";
+		}
+		
+		if(password=="")
+		{
+			document.getElementById('password').style="border:3px solid red";
+			document.getElementById('output9').innerHTML="Enter password";
+		}
+		else
+		{
+			document.getElementById('password').style="";
+			document.getElementById('output9').innerHTML="";
+		}
+		if(number=="")
+		{
+			 document.getElementById('number').style="border:3px solid red";
+			 document.getElementById('output10').innerHTML="Enter phone number";
+		}
+		else
+		{
+			document.getElementById('number').style="";
+			document.getElementById('output10').innerHTML="";
+		}
+		if((username!="")&&(fname!="")&&(mname!="")&&(address!="")&&(countryname!="")&&(cityname!="")&&(provincename!="")&&(email!="")&&(password!="")&&(number!=""))	
+		{
+			alert("dat is submitted successfully");
+		}
+		else
+		{
+			alert("please enter all fields")
+		}
+		
+	}
+
+</script>
+
+
+<!-- create a form with 20 fields and validate it -->
+</body>
+</html>

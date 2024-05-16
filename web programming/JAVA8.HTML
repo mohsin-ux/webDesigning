@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java8</title>
+    <style type="text/css">
+        .design{
+            color: red;
+        }
+        .design1{
+            color: aliceblue;
+            font-size: 30px;
+            text-align: center;
+            margin: 30px 80px;
+        }
+        .style1{
+            width: 70%;
+            height: 400px;
+            float: left;
+            margin: 50px 50px;
+            background-color: greenyellow;
+        }
+        .style2{
+            width: 80%;
+            height: 300px;
+            float: left;
+            margin: 50px 80px;
+            background-image: url("pics/34.jpg");
+            background-size: cover;
+        }
+        .button{
+            padding: 10px 30px;
+            font-size: 20px;
+            border-radius: 10px;
+            background-color: orange;
+            color: blue;
+        }
+
+
+    </style>
+</head >
+<body style="background-color: rgb(243, 109, 243);">
+    <span>Input first num :- </span>
+    <input type="number" id="number1">
+    <span id="b1" class="design" ></span><br><br>
+
+    <span>Input second num</span>
+    <input type="number" id="number2">
+    <span id="b2" class="design"></span><br><br>
+
+    <input type="submit" value="add" class="button" onclick="add()">
+    <input type="submit" value="minus" class="button" onclick="subtract()">
+    <input type="submit" value="multiply" class="button" onclick="multiply()">
+    <input type="submit" value="division" class="button" onclick="division()"><br><br>
+
+  
+
+
+    <script type="text/javascript">
+        function add(){                                         
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=+num1 + +num2;
+            if(num1=="")
+            {
+                document.getElementById('number1').style="border: 3px solid red";
+                document.getElementById('b1').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number1').style="";
+                document.getElementById('b1').innerHTML="";
+            }
+            if(num2=="")
+            {
+                document.getElementById('number2').style="border: 3px solid red";
+                document.getElementById('b2').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number2').style="";
+                document.getElementById('b2').innerHTML="";
+            }
+            document.getElementById('a1').innerHTML="Addition of two numbers is: ";
+            document.getElementById('a2').innerHTML=result;
+
+        }
+        function subtract(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=num1-num2;
+            if(num1=="")
+            {
+                document.getElementById('number1').style="border: 3px solid red";
+                document.getElementById('b1').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number1').style="";
+                document.getElementById('b1').innerHTML="";
+
+            }
+            if(num2=="")
+            {
+                document.getElementById('number2').style="border: 3px solid red";
+                document.getElementById('b2').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number2').style="";
+                document.getElementById('b2').innerHTML="";
+
+            }
+            document.getElementById('a1').innerHTML="Subtraction of two numbers is: ";
+            document.getElementById('a2').innerHTML=result;
+        }
+
+        function multiply(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=num1*num2;
+            if(num1=="")
+            {
+                document.getElementById('number1').style="border: 3px solid red";
+                document.getElementById('b1').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number1').style="";
+                document.getElementById('b1').innerHTML="";
+
+            }
+            if(num2=="")
+            {
+                document.getElementById('number2').style="border: 3px solid red";
+                document.getElementById('b2').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number2').style="";
+                document.getElementById('b2').innerHTML="";
+
+            }
+            document.getElementById('a1').innerHTML="Multiply of two numbers is: ";
+            document.getElementById('a2').innerHTML=result;
+            
+        
+        }
+        function division(){
+            var num1=document.getElementById('number1').value;
+            var num2=document.getElementById('number2').value;
+            var result=num1/num2;
+   
+            if(num1=="")
+            {
+                document.getElementById('number1').style="border: 3px solid red";
+                document.getElementById('b1').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number1').style="";
+                document.getElementById('b1').innerHTML="";
+
+            }
+            if(num2=="")
+            {
+                document.getElementById('number2').style="border: 3px solid red";
+                document.getElementById('b2').innerHTML="Enter first value";
+            }
+            else
+            {
+                document.getElementById('number2').style="";
+                document.getElementById('b2').innerHTML="";
+            }
+
+            
+            document.getElementById('a1').innerHTML="Division of two numbers is: ";
+            document.getElementById('a2').innerHTML=result;
+         
+    }
+    </script>
+
+    <div class="style1">
+        <div class="style2">
+            <span id="a1" class="design1"></span><br><br>
+            <span id="a2" class="design1"></span>
+        </div>
+    </div>
+
+</body>
+</html>

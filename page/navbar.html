@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .navbar {
+        width: 100%;
+        height: 100px;
+        border: 2px solid red;
+        background-color: green;
+      }
+      .nav {
+        width: 90%;
+        height: 100px;
+        margin: auto;
+        border: 2px solid black;
+        background-color: orangered;
+      }
+      .box {
+        width: 48%;
+        height: 100px;
+        float: left;
+        background-color: gold;
+      }
+      .left {
+        /* background-color: blue; */
+      }
+      .right {
+        /* background-color: aqua; */
+      }
+      ul {
+        list-style: none;
+        float: right;
+        margin-top: 35px;
+      }
+      ul li {
+        float: left;
+        margin-left: 10px;
+      }
+      @media (max-width: 768px) {
+        .navbar {
+          height: 200px;
+        }
+        .box {
+          width: 100%;
+        }
+        h1 {
+          text-align: center;
+        }
+        .ul {
+          float: left;
+        }
+      }
+
+      .ser {
+        width: 100%;
+        height: 400px;
+        border: 2px solid;
+      }
+      .services {
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        background-color: aqua;
+      }
+      .box2 {
+        width: 100%;
+        height: inherit;
+        display: flex;
+        background-color: red;
+      }
+      .innr-box {
+        width: 24%;
+        height: 300px;
+        background-color: black;
+        margin: 5px;
+        color: antiquewhite;
+      }
+      @media (max-width: 1024px) {
+        .box2 {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .box2 .innr-box {
+          width: 48%;
+        }
+      }
+      @media (max-width: 560px) {
+        .box2 .innr-box {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="navbar">
+      <div class="nav">
+        <div class="left box">
+          <h1>logo</h1>
+        </div>
+        <div class="right box">
+          <ul>
+            <li>about</li>
+            <li>home</li>
+            <li>contact</li>
+            <li>us</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="ser">
+      <div class="services">
+        <div class="box2">
+          <div class="innr-box">1</div>
+          <div class="innr-box">2</div>
+          <div class="innr-box">3</div>
+          <div class="innr-box">4</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

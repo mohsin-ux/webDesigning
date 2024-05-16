@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+    <style type="text/css">
+        .button{
+            background-color: rgb(46, 245, 46);
+           border-radius: 40px;
+            border-color:rgb(46, 245, 46);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body style="background-color: pink;">
+
+
+
+
+                                <!-- calculator -->
+
+
+
+
+    <form>
+        <p>Enter 1st num:</p>
+        <input type="number" placeholder="Enter num" style="padding-top:7px; padding-bottom: 7px;" id="btn1">
+        <p>Enter 2nd num:</p>
+        <input type="number" placeholder="Enter num" id="btn2"><br><br>
+
+        <input class="button" type="button" value="add num"        onclick="add()">
+        <input class="button" type="button" value="subtract num"   onclick="sub()">
+        <input class="button" type="button" value="multiply num"   onclick="multiply()">
+        <input class="button" type="button" value="divide num"     onclick="divide()"><hr>
+    </form>
+    <script type="text/javascript">           
+        function add(){
+            var a=document.getElementById("btn1").value;
+            var b=document.getElementById("btn2").value;
+            if (a=="") {
+                alert("kindly Enter Value 1");
+            }
+            else if(b==""){
+                alert("kindly Enter Value 2");
+            }
+            else{
+                 var c=+a + +b;
+            alert("Addition of two numbers: "+c);
+            }
+           
+        }
+        function sub(){
+            var a=document.getElementById("btn1").value;
+            var b=document.getElementById("btn2").value;
+            if(a=="")
+            {
+                alert("Kindly Enter 1st value...");
+            }
+            else if(b=="")
+            {
+                alert("kindly enter 2nd value...")
+            }
+            else{
+            var c=a-b;
+            alert("subtraction of two numbers: "+c);
+            }
+        }
+        function multiply(){
+            var a=document.getElementById("btn1").value;
+            var b=document.getElementById("btn2").value;
+            if(a==""){
+                alert("kindly enter first value");
+            }
+            else if(b==""){
+                alert("kindly Enter 2nd value");
+            }
+            else{
+            var c=a*b;
+            alert("multiplication of two numbers: "+c)
+            }
+        }
+        function divide(){
+            var a=document.getElementById("btn1").value;
+            var b=document.getElementById("btn2").value;
+            if(a==""){
+                alert("kindly enter 1st value")
+            }
+            else if(b==""){
+                alert("kindly enter 2nd value")
+            }
+            else{
+            var c=a/b;
+            alert("division of two numbers: "+c)
+            }
+        }
+    </script>
+
+
+
+
+                                <!-- radius and circumference -->
+
+
+
+    <form>
+        <p>Enter radius:</p>
+        <input type= "number" placeholder="Enter radius in meters" id="radius"><br><br>
+        <input class="button" type="button" value="Circumference" onclick="circum()">
+        <input class="button" type="button" value="Area" onclick="area()"><hr>
+    </form>
+    <script type="text/javascript">
+        function circum(){
+            var r=document.getElementById("radius").value;
+            var b=2*3.14*r;
+            alert(b+" meters");
+        }
+        function area(){
+            var r=document.getElementById("radius").value;
+            var b=3.14*r*r;
+            alert(b+" meters");
+        }
+    </script>
+
+                        <!-- fehrenhite and kelvin -->
+
+    <table>
+        <p>Enter temperature:</p>
+        <input type="number" placeholder="Enter temp in celcius" id="temp"><br><br>
+        <input class="button" type="button" value="fehrenhite" onclick="fehrenhite()">
+        <input class="button" type="button" value="kelvin"     onclick="kelvin()">
+    </table>
+    <script type="text/javascript">
+        function fehrenhite(){
+            var c=document.getElementById("temp").value;
+            var b=9/5*c+ +32;
+            alert(b+" 'f");
+        }
+        function kelvin(){
+            var c=document.getElementById("temp").value;
+            var b=+c + +273;
+            alert(b+" kelvin");
+        }
+    </script><hr>
+    
+
+</body>
+</html>
+   

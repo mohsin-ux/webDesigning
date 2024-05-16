@@ -1,0 +1,198 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+/* .container {
+  width: 80%;
+  height: inherit;
+  margin: auto;
+} */
+/*---------- navbar --------*/
+header {
+  width: 100%;
+  height: 75px;
+  padding: 0 10%;
+  background-color: rgb(50, 50, 50);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* position: absolute; */
+}
+header .logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+}
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+header li {
+  float: left;
+  list-style: none;
+  padding: 27px 10px;
+}
+header a,
+button {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header button {
+  padding: 7px 20px;
+  background-color: white;
+  color: rgb(50, 50, 50);
+  border: none;
+  border-radius: 5px;
+}
+header button:hover {
+  background-color: orangered;
+  color: white;
+  transition: 0.3s;
+}
+
+header a:hover {
+  color: rgb(50, 50, 50);
+  text-shadow: 15px white;
+}
+
+/*------------ intro ---------------*/
+
+.intro {
+  width: 100%;
+  height: 350px;
+  background-color: lightgray;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.intro .box {
+  width: 50%;
+  height: 70%;
+}
+.intro h1 {
+  font-size: 28px;
+}
+.intro p {
+  margin: 20px 0 60px;
+  font-size: 20px;
+}
+.intro img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  /* align: center; */
+}
+.intro button {
+  padding: 9px 25px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
+
+/*------------ cards -------------*/
+
+.cards {
+  width: 100%;
+  height: 450px;
+  padding: 0 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.cards .heading {
+  position: absolute;
+  bottom: 240px;
+}
+.cards .box {
+  width: 30%;
+  height: 80%;
+}
+.cards .innerbox {
+  width: 100%;
+  height: 50%;
+}
+
+.cards img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  align: center;
+}
+.cards h3 {
+  padding: 7px 0;
+}
+.cards p {
+  padding: 10px 0 30px;
+}
+
+.cards button {
+  padding: 9px 25px;
+  color: white;
+  background-color: orangered;
+  border: none;
+  border-radius: 5px;
+}
+
+/*---------- footer ---------*/
+
+.footer {
+  width: 100%;
+  height: 350px;
+  background-color: rgb(50, 50, 50);
+  padding: 0 10%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer .container {
+  width: 30%;
+  height: 80%;
+}
+.footer .heading {
+  margin: 20px 0;
+}
+.footer .box {
+  display: grid;
+  grid-template: repeat(3, 70px) / 25fr 75fr;
+}
+.footer button {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(50, 50, 50);
+}
+.footer li {
+  list-style: none;
+}
+/*------------- copyright -----------*/
+
+.copyright {
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  padding: 30px 30%;
+}
+
+/*-------------- empty ----------*/
+
+.empty {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(50, 50, 50);
+}

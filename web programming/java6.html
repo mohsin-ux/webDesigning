@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <style type="text/css">
+        .design{
+            padding: 7px 50px;
+        }
+    </style>
+</head >
+<body style="background-color: rgb(211, 127, 250);">
+    <H1>SUBMIT FORM</H1>
+    <span>Enter name:</span>
+    <input type="text" id="name">
+    <span id="a1"></span><br><br>
+
+    <span>Enter number:</span>
+    <input type="number" id="number">
+    <span id="a2"></span><br><br>
+
+    <span>Enter email:</span>
+    <input type="text" id="email">
+    <span id="a3"></span><br><br>
+
+    <span>Enter address:</span>
+    <input type="text" id="address">
+    <span id="a4"></span><br><br>
+
+    <input type="submit" class="design" onclick="btn1()"><br><br>
+
+    <u><h2 id="a0"></h2></u>
+    <span id="a5"></span>
+    <span id="a6"></span><br>
+    <span id="a7"></span>
+    <span id="a8"></span><br>
+
+    <span id="a9"></span> 
+    <span id="a10"></span><br>
+    <span id="a11"></span>
+    <span id="a12"></span>
+    
+    <script type="text/javascript">
+       
+
+        function btn1()
+        {
+
+            // ...............VALIDATION............
+
+
+
+            var name=document.getElementById('name').value;
+            var number=document.getElementById('number').value;
+            var email=document.getElementById('email').value;
+            var address=document.getElementById('address').value;
+
+            if(name=="")
+            {
+                document.getElementById('name').style="border: 3px solid red";
+                document.getElementById('a1').innerHTML="Enter name";
+            }
+            else{
+                document.getElementById('name').style="";
+                document.getElementById('a1').innerHTML="";
+            }
+            if(number=="")
+            {
+                document.getElementById('number').style="border: 3px solid red";
+                document.getElementById('a2').innerHTML="Enter number";
+            }
+            else{
+                document.getElementById('number').style="";
+                document.getElementById('a2').innerHTML="";
+            }
+            if(email=="")
+            {
+                
+                document.getElementById('email').style="border: 3px solid red";
+                document.getElementById('a3').innerHTML="Enter email";
+            }
+            else{
+                document.getElementById('email').style="";
+                document.getElementById('a3').innerHTML="";
+            }
+            if(address=="")
+            {
+                document.getElementById('address').style="border: 3px solid red";
+                document.getElementById('a4').innerHTML="Enter address";
+            }
+            else{
+                document.getElementById('address').style="";
+                document.getElementById('a4').innerHTML="";
+            }
+            
+
+                      //.................. O U T P U T..........................
+
+
+            if((name!="")&&(number!="")&&(email!="")&&(address!=""))
+            {
+                alert("done");
+                document.getElementById('a0').innerHTML="OUTPUT";
+                document.getElementById('a5').innerHTML="Name: ";
+                document.getElementById('a6').innerHTML=name;
+                document.getElementById('a7').innerHTML="Number: ";
+                document.getElementById('a8').innerHTML=number;
+                document.getElementById('a9').innerHTML="Email: ";
+                document.getElementById('a10').innerHTML=email;
+                document.getElementById('a11').innerHTML="Address: ";
+                document.getElementById('a12').innerHTML=address;
+            }
+            
+        }
+            
+        
+    </script>
+</body>
+</html>

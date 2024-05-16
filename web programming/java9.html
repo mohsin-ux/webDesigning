@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edges">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java9</title>
+
+    <style type="text/css">
+        .design1{
+            width: 60%;
+            height: 500px;
+            float: left;
+            background-color: brown;
+            margin: 40px 60px;
+        }
+        .design2{
+            width: 80%;
+            height: 400px;
+            float: left;
+            background-image: url("pics/30.jpg");
+            background-size: cover;
+            margin: 40px 50px;
+            color: aliceblue;
+        }
+
+        .style1{
+        
+            padding: 40px 30px;
+            font-size: 40px;
+        }
+        .button{
+            padding: 10px 20px;
+            font-size: medium;
+            background-color: brown;
+            color: aliceblue;
+        }
+
+
+    </style>
+</head>
+<body style="background-color: gold">
+    <span>Enter Radius : </span>
+    <input type="text"  id="radius">
+    <span id="a1"></span><br><br>
+
+    <input type="button" value="Area" onclick="area()" class="button">
+    <input type="button" value="Circumference" onclick="circum()" class="button"><br><br>
+
+
+    <div class="design1">
+        <div class="design2">
+            <span id="a2" class="style1"></span>
+            <span id="a3" class="style1"></span><br><br>
+         </div>
+    </div>
+
+    <script type="text/javascript">
+
+        function area()
+        {
+            var radius=document.getElementById('radius').value;
+            var area=2*3.14*radius;
+            
+            if(radius=="")
+            {
+                alert("Enter value of radius....");
+                document.getElementById('radius').style="border: 3px solid red";
+                document.getElementById('a1').innerHTML="Enter the value of radius";
+            }
+            else
+            {
+                document.getElementById('radius').style="";
+                document.getElementById('a1').innerHTML="";
+            }
+            
+            document.getElementById('a2').innerHTML="Area: ";
+                document.getElementById('a3').innerHTML=area;
+        }
+        function circum()
+        {
+            var radius=document.getElementById('radius').value;
+            var circum=3.14*radius*radius;
+            if(radius=="")
+            {
+                alert("Enter value of radius.....");
+                document.getElementById('radius').style="border: 3px solid red";
+                document.getElementById('a1').innerHTML="Enter the value of radius";
+            }
+            else
+            {
+                document.getElementById('radius').style="";
+                document.getElementById('a1').innerHTML="";
+            }
+            
+            document.getElementById('a2').innerHTML="Circumference : ";
+                document.getElementById('a3').innerHTML=circum;
+        }
+
+
+
+    </script>
+</body>
+</html>

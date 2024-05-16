@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java11</title>
+
+    <style type="text/css">
+        .design{
+            color: red;
+        }
+        .design1{
+            width: 47%;
+            height: 610px;
+            float: left;
+            background-image: url("pics/30.jpg");
+            background-size: cover;
+            color: aliceblue;
+            padding: 20px 20px;
+            font-size: 30px;
+
+        }
+        .design2{
+            width: 47%;
+            height: 610px;
+            float: left;
+            
+            background-image: url("pics/16.jpg");
+            background-size: cover;
+            font-size: 20px;
+            padding: 20px 20px;
+            color: white;
+            
+        }
+        .button{
+            background-color: greenyellow;
+            padding: 10px 30px;
+            font-size: 30px;
+            border: 3px solid greenyellow ;
+            border-radius: 20px;
+        }
+
+    </style>
+</head>
+
+<body style="background-color: orange">
+    <div class="design2">
+            <h2>Enter Your Information...</h2>
+            <span>Enter First Name: </span>
+            <input type="text" id="firstname">
+            <span id="a1" class="design"></span><br><br>
+        
+            <span>Enter Second Name: </span>
+            <input type="text" id="lastname">
+            <span id="a2" class="design"></span><br><br>
+        
+            <span>Enter Fathername: </span>
+            <input type="text" id="fathername">
+            <span id="a3" class="design"></span><br><br>
+        
+            <span>Enter Your Age: </span>
+            <input type="number" id="age">
+            <span id="a4" class="design"></span><br><br>
+        
+            <span>Enter Phone Number: </span>
+            <input type="number" id="number">
+            <span id="a5" class="design"></span><br><br>
+        
+            <span>Enter Email Id: </span>
+            <input type="text" id="email">
+            <span id="a6" class="design"></span><br><br>
+        
+            <input type="button" value="submit" onclick="submit()" class="button"><br><br>
+        
+        
+    </div>
+    <div class="design1">
+
+     <h2>Your Information.....</h2>   
+    <span id="a13"></span>
+    <span id="a7"></span><br><br>
+    <span id="a14"></span>
+    <span id="a8"></span><br><br>
+    <span id="a15"></span>
+    <span id="a9"></span><br><br>
+    <span id="a16"></span>
+    <span id="a10"></span><br><br>
+    <span id="a17"></span>
+    <span id="a11"></span><br><br>
+    <span id="a18"></span>
+    <span id="a12"></span><br><br>
+
+    </div>
+
+
+
+
+    <script type="text/javascript">
+
+
+        function submit()
+        {
+
+            // ...........................VARIABLE DECLARATION..............
+
+            var fname=document.getElementById('firstname').value;
+            var lname=document.getElementById('lastname').value;
+            var fathername=document.getElementById('fathername').value;
+            var age=document.getElementById('age').value;
+            var number=document.getElementById('number').value;
+            var email=document.getElementById('email').value;
+
+            // .............................VALIDATION..............................
+
+            if(fname=="")
+            {
+                document.getElementById('a1').innerHTML="Enter first name...";
+                document.getElementById('firstname').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a1').innerHTML="";
+                document.getElementById('firstname').style="";
+            }
+
+
+            if(lname=="")
+            {
+                document.getElementById('a2').innerHTML="Enter last name...";
+                document.getElementById('lastname').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a2').innerHTML="";
+                document.getElementById('lastname').style="";
+            }
+
+
+            if(fathername=="")
+            {
+                document.getElementById('a3').innerHTML="Enter Father name...";
+                document.getElementById('fathername').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a3').innerHTML="";
+                document.getElementById('fathername').style="";
+            }
+
+
+            if(age=="")
+            {
+                document.getElementById('a4').innerHTML="Enter Your age...";
+                document.getElementById('age').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a4').innerHTML="";
+                document.getElementById('age').style="";
+            }
+
+
+            if(number=="")
+            {
+                document.getElementById('a5').innerHTML="Enter number...";
+                document.getElementById('number').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a5').innerHTML="";
+                document.getElementById('number').style="";
+            }
+
+
+            if(email=="")
+            {
+                document.getElementById('a6').innerHTML="Enter your Email...";
+                document.getElementById('email').style="border: 3px solid red";
+            }
+            else{
+                document.getElementById('a6').innerHTML="";
+                document.getElementById('email').style="";
+            }
+
+
+            // .....................CONDITION ON AGE..................................
+
+
+            if(fname!="" && lname!="" && fathername!="" && age!="" && number!="" && email!="")
+            {
+                if(age<18)
+                {
+                alert("Your age is less than 18");
+                }
+                else if(age>=18)
+                {
+                    alert("Data is submitted successfully");
+                    
+                    document.getElementById('a13').innerHTML="First Name : ";
+                    document.getElementById('a7').innerHTML=fname;
+
+                    document.getElementById('a14').innerHTML="Second Name : ";
+                    document.getElementById('a8').innerHTML=lname;
+
+                    document.getElementById('a15').innerHTML="Father Name :";
+                    document.getElementById('a9').innerHTML=fathername;
+
+                    document.getElementById('a16').innerHTML="Age : ";
+                    document.getElementById('a10').innerHTML=age;
+
+                    document.getElementById('a17').innerHTML="Number : ";
+                    document.getElementById('a11').innerHTML=number;
+
+                    document.getElementById('a18').innerHTML="Email : ";
+                    document.getElementById('a12').innerHTML=email;
+                }
+            }
+            
+        }
+    </script>
+
+</body>
+</html> 

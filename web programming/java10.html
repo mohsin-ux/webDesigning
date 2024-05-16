@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java10</title>
+    <style type="text/css">
+        .style1{
+            color: red;
+        }
+        .style2{
+            color: #f0f8ff;
+            font-size: 30px;
+        }
+        .style3{
+            font-size: 20px;
+        }
+        .design1{
+            width: 70%;
+            height: 350px;
+            float: left;
+            background-image: url("pics/37.jpg");
+            background-size: cover;
+
+            margin: 20px 70px;
+            padding: 20px 20px;
+            border: 4px solid white;
+        }
+        .design2{
+            width: 93%;
+            height: 570px;
+            background-image: url("pics/36.jpg");
+            background-size: cover;
+            color: aliceblue;
+            padding: 50px 50px;
+            font-size: x-large;
+        }
+        .button{
+            padding: 5px 10px;
+            font-size: 20px;
+            background-color: rgb(253, 219, 28);
+            border: 3px solid gold;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body style="background-color: skyblue;">
+    <div class="design2">
+
+        <span>Enter your age: </span>
+        <input type="number" id="age" class="style3">
+        <span id="a1" class="style1"></span><br><br>
+        <span>Enter your gender...(male/female): </span>
+        <select name="" id="gender" class="style3">
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
+        <!-- <input type="text" id="gender" class="style3"> -->
+        <span id="a2" class="style1"></span><br><br>
+        <input type="button" value="submit" onclick="degree()" class="button"><br><br>
+        
+        <div class="design1">
+            <span class="style2">Best suitable degree is : </span>
+
+            <span id="a3" class="style2"></span>
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        function degree()
+        {
+            var age=document.getElementById('age').value;
+            var gender=document.getElementById('gender').value;
+
+
+            if(age=="")
+            {
+                    
+                document.getElementById('age').style="border: 3px solid red";
+                document.getElementById('a1').innerHTML="Enter age";
+            }
+
+            else if(age!="")
+            {
+                document.getElementById('age').style="";
+                document.getElementById('a1').innerHTML="";
+
+                if(age<18)
+                {
+                    document.getElementById('a3').innerHTML="";
+
+                    alert("you are under age");
+                } 
+                else if(age>=18)
+                {
+                    if(gender=="male")
+                    {
+                        document.getElementById('a3').innerHTML=" COMPUTER, PHYSICS, ENGINEERING";
+                    }
+                    
+                    else if(gender=="female")
+                    {
+                        document.getElementById('a3').innerHTML=" BIOLOGY, ECONOMICS, CHEMISTRY";
+
+                    }
+                    
+                } 
+
+            }
+
+            
+            if(gender=="")
+            {
+                document.getElementById('gender').style="border: 3px solid red";
+                document.getElementById('a2').innerHTML="Enter gender";
+            }
+            if(gender!="")
+            {
+                
+                document.getElementById('gender').style="";
+                document.getElementById('a2').innerHTML="";
+
+                if(gender!="male" && gender!="female")
+                { 
+                    alert("you can enter only male and female");
+                }
+                
+            }
+        }
+
+    </script>
+
+</body>
+</html>

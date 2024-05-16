@@ -1,0 +1,26 @@
+<html>
+    <body>
+        Small Pizza <input type="checkbox" value="250" id="small">
+        Medium Pizza <input type="checkbox" value="500" id="medium">
+        Large Pizza <input type="checkbox" value="750" id="large">
+        <input type="submit" onclick="total()">
+        <script>
+            function total(){
+                var small=0;
+                var medium=0;
+                var large=0;
+                if(document.getElementById('small').checked){
+                    var small=document.getElementById('small').value;
+                }
+                if(document.getElementById('medium').checked){
+                    var medium=document.getElementById('medium').value;
+                }
+                if(document.getElementById('large').checked){
+                    var large=document.getElementById('large').value;
+                }
+                var total=+small + +medium + +large; 
+                alert("Your Total Bill is: "+ total);
+            }
+        </script>
+    </body>
+</html>
